@@ -1,0 +1,17 @@
+/* FORM */
+/* ELEMENTS */
+
+/* {text} Survey Form */
+    /* Style: text size larger, text color white, center */
+/* {text} Thank you for... , center */ 
+
+    /* {text box} Name, next line box for answer and ghost text 'Enter your name'
+     {text box} Email, next line answer box, ghhost text 'Enter you Email'
+     {as a drop down} Age (optional), ghost text 'Age'
+    {drop down} Which option best describes your currennt role?
+     {bullet(circle) questions} Would you recomennd ABC to a friend? (Definitely, Maybe, Not sure)
+      {drop down} What is your favorite feature of ABC?
+      {bullet(square)} What would you like to see improved? (Check all that apply) */
+        /* (Front-end Projects, Back-end Projects, Data Visualization, Challenges, Open Source Community, Gitter help rooms, Videos, City Meetups, Wiki, Forum, Additional Courses) */
+        /* {comment box} Any comments or suggestions? */
+        /* {Submit Button} green, submit text white */
