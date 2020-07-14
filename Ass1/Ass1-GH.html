@@ -1,118 +1,125 @@
 <!DOCTYPE html>
 <html>
     <title>Assignment 1</title>
+    <head>
+        <link rel="stylesheet" href="styles-Ass1-GH.css">
+    </head>
 
    <body>
         <!-- FORM  -->
         <!-- ELEMENTS  -->
         
         <!-- {text} Survey Form -->
+        <div id="wrap1">
         <h2>Survey Form</h2>
 
         <!-- {text} Thank you for... , center -->
         <p>Thank you for taking the time to improve the platform</p>
+        </div>
             <!-- Style: text size larger, text color white, center -->
          <!-- ELEMENT FORM -->
-         <form>
-                
-                <div>
-                    <!-- {text box} Name, next line box for answer and ghost text (is called placeholder) 'Enter your name' -->
-                    <label for="name">Name</label><br>
-                    <input type="text" id="name" name="name" placeholder="Enter your name"><br>
-                </div>
+         <div id=box-1>
+        <!--box-1 is the id for the centeral purple box-->
+         <form>  
+            <div>
+                <!-- {text box} Name, next line box for answer and ghost text (is called placeholder) 'Enter your name' -->
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+            </div>
                
-                <div>
-                    <!-- {text box} Email, next line answer box, ghhost text 'Enter you Email' -->
+            <div>
+                <!-- {text box} Email, next line answer box, ghhost text 'Enter you Email' -->
                 <label for="email">Email</label><br>
                 <input type="text" id="email" name="email" placeholder="Enter your email">
-                </div>
+            </div>
 
-                <div>
-                    <!-- {as a drop down} Age (optional), ghost text 'Age' -->
-                    <!-- <frame> -->
-                        <label for="age">Age (optional)</label>
-                        <script>
-                            <select id="age-select"> placeholder="Age"</select>
+            <div>
+                <!-- {as a drop down} Age (optional), ghost text 'Age' -->
+                <!-- <frame> -->
+                <label for="age">Age (optional)</label>
+                    <script>
+                        <select id="age-select"> placeholder="Age"</select>
 
-                                function loadAgeSelector()
-                                    {
-                                        var startyear = 1940;
-                                        var endyear = 2020;
-                                         for (var i = startyear;i<=endyear;i++)
-                                         {
+                            function loadAgeSelector(){
+                                    var startyear = 1940;
+                                    var endyear = 2020;
+                                    for (var i = startyear;i<=endyear;i++)
+                            {
                                          node=document.createElement("Option");
                                          textnode=document.createTextNode(i);
                                             node.appendChild(textnode);
                                             document.getElementById("age-select").appendChild(node);
                                         }
                                     }
-                        </script>
+                    </script>
                     <!-- </frame> -->
-                </div>
+            </div>
 
-                <div>
-                    <!-- {drop down} Which option best describes your currennt role? -->
-                    <label for="job">Which option best describes your current role?</label></br>
-                    <select name="job" id="job" placeholder="Select current role">
-                            <option value="no-it">Non-IT Career</option>
-                            <option value="student">Student</option>
-                            <option value="jr-it">Junior IT</option>
-                            <option value="no-job">Unemployed/Underemployed</option>
-                          </select> 
-                </div>
+            <div>
+                <!-- {drop down} Which option best describes your currennt role? -->
+                <label for="job">Which option best describes your current role?</label></br>
+                <select name="job" id="job" placeholder="Select current role">
+                    <option value="no-it">Non-IT Career</option>
+                    <option value="student">Student</option>
+                    <option value="jr-it">Junior IT</option>
+                    <option value="no-job">Unemployed/Underemployed</option>
+                </select> 
+            </div>
                 
-                </div>
-                    <!-- {bullet(circle) questions} Would you recomennd ABC to a friend? (Definitely, Maybe, Not sure) -->
-                    <label for="recommend">Would you recommend ABC to a friend?</label>
-                    <select name="recommend" id="recommend">
-                      <option value="yes">Definitely</option>
-                      <option value="maybe">Maybe</option>
-                      <option value="No">Not Sure</option>
+            <div>
+                <!-- {bullet(circle) questions} Would you recomennd ABC to a friend? (Definitely, Maybe, Not sure) -->
+                <label for="recommend">Would you recommend ABC to a friend?</label></br>
+                <select name="recommend" id="recommend">
+                    <option value="yes">Definitely</option>
+                    <option value="maybe">Maybe</option>
+                    <option value="No">Not Sure</option>
+                </select> 
+            </div>
+
+            <div>
+                <!-- {drop down} What is your favorite feature of ABC? -->
+                <label for="fav">What is your favorite feature of ABC?</label></br>
+                <select name="fav" id="fav" placeholder="Select an option">
+                    <option value="teach">Tutors</option>
+                    <option value="others">Other Students</option>
+                    <option value="ass">Assignments</option>
+                    <option value="v4p">Value for price</option>
+                </select> 
+            </div>
+
+            <div>
+                <!-- {bullet(square)} What would you like to see improved? (Check all that apply) -->
+                <!-- (Front-end Projects, Back-end Projects, Data Visualization, Challenges, Open Source Community, Gitter help rooms, Videos, City Meetups, Wiki, Forum, Additional Courses)  -->
+                <label for="improve">What would you like to see improved? (Check all that apply)</label></br>
+                    <select name="improve" size="11" multiple id="imp">
+                        <option value="fep">Front-end Projects</option>
+                        <option value="bep">Back-end Projects</option>
+                        <option value="chal">Challenges</option>
+                        <option value="dat">Data Visualization</option>
+                        <option value="osc">Open Source Community</option>
+                        <option value="ghr">Gitter help rooms</option>
+                        <option value="vid">Videos</option>
+                        <option value="meet">City Meetups</option>
+                        <option value="wiki">Wiki</option>
+                        <option value="forum">Forum</option>
+                        <option value="more">Additional Courses</option>
                     </select> 
-                </div>
-
-                <div>
-                    <!-- {drop down} What is your favorite feature of ABC? -->
-                    <label for="fav">What is your favorite feature of ABC?</label></br>
-                    <select name="fav" id="fav" placeholder="Select an option">
-                            <option value="teach">Tutors</option>
-                            <option value="others">Other Students</option>
-                            <option value="ass">Assignments</option>
-                            <option value="v4p">Value for price</option>
-                          </select> 
-                </div>
-
-                 <div>
-                 <!-- {bullet(square)} What would you like to see improved? (Check all that apply) -->
-                 <!-- (Front-end Projects, Back-end Projects, Data Visualization, Challenges, Open Source Community, Gitter help rooms, Videos, City Meetups, Wiki, Forum, Additional Courses)  -->
-                    <label for="improve">What would you like to see improved? (Check all that apply)</label></br>
-                        <select name="improve" size="11" multiple>
-                            <option value="fep">Front-end Projects</option>
-                            <option value="bep">Back-end Projects</option>
-                            <option value="chal">Challenges</option>
-                            <option value="dat">Data Visualization</option>
-                            <option value="osc">Open Source Community</option>
-                            <option value="ghr">Gitter help rooms</option>
-                            <option value="vid">Videos</option>
-                            <option value="meet">City Meetups</option>
-                            <option value="wiki">Wiki</option>
-                            <option value="forum">Forum</option>
-                            <option value="more">Additional Courses</option>
-                      </select> 
-                </div>
-                <div>
-                     <!-- {comment box} Any comments or suggestions? -->
-                     <label for="comments">Any comments for suggestions?</label></br>
-                     <textarea name="comments" rows=4>
-                     Enter your comments here...
-                     </textarea>
-                </div>    
-                <div>
-                    <!-- {Submit Button} green, submit text white -->
-                    <input type="Submit">
-                    <!-- We might need to use the button element for config with css. -->
-                </div>
-         </form>
-
+            </div>
+                
+            <div>
+                <!-- {comment box} Any comments or suggestions? -->
+                <label for="comments">Any comments for suggestions?</label></br>
+                    <textarea name="comments" rows=4 id=com-box>
+                    Enter your comments here...
+                    </textarea>
+            </div>    
+                
+            <div>
+                <!-- {Submit Button} green, submit text white -->
+                <input type="Submit" id="sub-button">
+                <!-- We might need to use the button element for config with css. -->
+            </div>
+        </form>
+        </div>
    </body>
 </html>

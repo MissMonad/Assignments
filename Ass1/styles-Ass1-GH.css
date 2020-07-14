@@ -1,17 +1,112 @@
 /* FORM */
+
+#box-1 {
+    background: rgba(61, 0, 153, 0.6);
+    
+    padding: 15px;   
+}
+
+body {
+    font-family: Tahoma;
+    color: beige;  
+    background-color:blue;
+    
+}
+
+#wrap1 *{
+    text-align: center;
+    margin: 5px;
+    padding: 3px;
+}
+
+
 /* ELEMENTS */
 
 /* {text} Survey Form */
     /* Style: text size larger, text color white, center */
 /* {text} Thank you for... , center */ 
 
-    /* {text box} Name, next line box for answer and ghost text 'Enter your name'
-     {text box} Email, next line answer box, ghhost text 'Enter you Email'
-     {as a drop down} Age (optional), ghost text 'Age'
-    {drop down} Which option best describes your currennt role?
-     {bullet(circle) questions} Would you recomennd ABC to a friend? (Definitely, Maybe, Not sure)
-      {drop down} What is your favorite feature of ABC?
-      {bullet(square)} What would you like to see improved? (Check all that apply) */
+    /* {text box} Name, next line box for answer and ghost text 'Enter your name'*/
+    #name {
+        background-color: aliceblue;
+        display: block;
+        margin: 8px 0px;
+    }
+
+
+     /* {text box} Email, next line answer box, ghhost text 'Enter you Email' */
+    #email {
+        background-color: aliceblue;
+        display: block;
+        margin: 8px 0px;
+    }
+
+
+    /* {as a drop down} Age (optional), ghost text 'Age' */
+    #age-select {
+        background-color: aliceblue;
+        display: block;
+        margin: 8px 0px;
+    }
+
+
+    /* {drop down} Which option best describes your currennt role? */
+    #job {
+        background-color: aliceblue;
+        display: block;
+        margin: 8px 0px;
+    }
+
+
+    /* {bullet(circle) questions} Would you recomennd ABC to a friend? (Definitely, Maybe, Not sure) */
+    #recommend {
+        background-color: aliceblue;
+        margin: 8px 0px;
+    }
+
+
+    /* {drop down} What is your favorite feature of ABC? */
+    #fav {
+        background-color: aliceblue;
+        display: block;
+        margin: 8px 0px;
+    }
+
+
+    /* {bullet(square)} What would you like to see improved? (Check all that apply) */ 
         /* (Front-end Projects, Back-end Projects, Data Visualization, Challenges, Open Source Community, Gitter help rooms, Videos, City Meetups, Wiki, Forum, Additional Courses) */
-        /* {comment box} Any comments or suggestions? */
-        /* {Submit Button} green, submit text white */
+    #imp {
+        background-color: aliceblue;
+        margin: 8px 0px;
+    }
+
+
+    /* {comment box} Any comments or suggestions? */
+    #com-box {
+        background-color: aliceblue;
+        color: dimgrey;
+        margin: 8px 0px;
+        width: 100%;
+    }
+    /* {Submit Button} green, submit text white */
+    #sub-button {
+        margin: 10px;
+        padding: 10px 25px;
+        height: 20px;
+        border: 1px solid transparent;
+        background: green;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.5s;
+        display: block;
+        width: 100%;
+    }
+
+    #sub-button:hover {
+        background: green;
+        color: black;
+        border: 1px soild black;
+        /* But it moves the text below when you hover so add a transparent solid 1px boarder to the button */
+    }
+    
